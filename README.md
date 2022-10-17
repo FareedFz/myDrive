@@ -3,7 +3,9 @@
 
 git clone
 
-#run 
-node index.js
-node userServer.js
-node fileUser.js
+#run npm install ,
+
+node index.js,,
+node userServer.js,
+node fileUser.js,
+
