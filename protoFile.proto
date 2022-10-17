@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+message Empty {}
+
+message User {
+    
+    string name = 1;
+    string email = 2;
+    string password = 3;
+    string fileType= 4;
+    string folderName= 5;
+
+
+}
+message Folder {
+    
+  int32  userId= 1;
+  string folderName= 2;
+
+ 
+}
+
+
+service UserService {
+
+    rpc Register (User) returns (User) {}
+    rpc Login (User) returns (User) {}
+    rpc CreateFolder (Folder) returns (Folder) {}
+   
+    
+}

@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "badc5bb0-868a-4829-925e-a81b688b2f18",
+		"name": "myDrive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "he",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"sa2@gmail.com\",\n    \"password\":\"saa12@\",\n    \"type\":\"folder\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/createFolder",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"createFolder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Regiter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"sam\",\n    \"email\":\"sa2@gmail.com\",\n    \"password\":\"saa12@\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/Register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createFolder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \"email\":\"kafoor@gmail.com\",\n    \"password\":\"saa12@\",\n    \"type\":\"folder\",\n    \"folderName\":\"problems\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/createFolder",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"createFolder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "\"kafoor@gmail.com\",",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "\"aa12@",
+							"type": "text"
+						},
+						{
+							"key": "\"type\"",
+							"value": "folder",
+							"type": "text"
+						},
+						{
+							"key": "\"folderName\"",
+							"value": "problems",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": "/home/shahul/EPD .json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/createFile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"createFile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
